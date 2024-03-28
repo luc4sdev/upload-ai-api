@@ -4,7 +4,7 @@ GET htttp://localhost:3333/prompts
 ###
 
 # @name upload
-POST http://localhost:3333/videos
+POST http://localhost:3333/convert
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 
@@ -34,6 +34,6 @@ Content-Type: application/json
 
 {
    "videoId": "642189b7-3007-4dbf-a027-d277877ce7bc",
-   "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''",
+   "prompt": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''",
    "temperature": 0.5
 }
